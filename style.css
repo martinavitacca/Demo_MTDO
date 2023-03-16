@@ -7,30 +7,49 @@
     font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightslategray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+}
+
 .blur {
     backdrop-filter: blur(10px);
 }
 
 .logo {
-    /* margin-top: 20px; */
-    /* margin-left: 20px; */
-    width: 80px;
-    height: 80px;
+    width: 155px;
+    height: 64px;
 }
 
 .menuImage {
-    /* top: 69px; */
-    /* left: 66px; */
-    width: 155px;
-    height: 64px;
-    /* position: relative; */
-    /* width: 60px; */
-    /* height: 60px; */
-    background: url(img/align.png);;
+    width: 32px;
+    height: 14px;
+    background: url(img/menu.png);;
     background-size: 50px;
     background-position: right;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+
+#btn-back-to-top {
+    width: 30px;
+    height: 30px;
+    background-image: url(img/up-arrow.png);
+    background-size: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 20px;
+    right: 30px;
+    position: fixed;
+    opacity: 0.9; 
+    cursor: pointer;    
 }
 
 .showcase header {
@@ -61,12 +80,17 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: gray;
+    background-color: silver;
     mix-blend-mode: overlay;
 }
 
-.companyName {
-    width: 70%;
+h6 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+h6 a:hover {
+    color: skyblue;
 }
 
 .menu {
@@ -87,4 +111,12 @@
 
 .menu li a:hover {
     color: skyblue;
+}
+
+.scroll-page {
+    scroll-behavior: smooth;
+}
+
+.scroll-page p {
+    text-align: left;
 }
