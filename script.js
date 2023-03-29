@@ -24,3 +24,14 @@ function backToTop() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+
+
+
+
+function openNav() {
+    document.getElementById("menu").style.width = "100%";
+}
+  
+function closeNav() {
+    document.getElementById("menu").style.width = "0%";
+}
