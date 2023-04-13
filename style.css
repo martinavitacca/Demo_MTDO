@@ -7,21 +7,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 5px;
-} */
+}
 
-/* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: lightslategray;
-} */
+}
 
-/* ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: whitesmoke; 
-} */
-
-/* .blur {
-    backdrop-filter: blur(10px);
-} */
+}
 
 .logo {
     width: 155px;
@@ -30,7 +26,7 @@
     opacity: 1;
 }
 
-.menuImage {
+.menu-image {
     width: 32px;
     height: 14px;
     background: transparent url('img/menu.png') 0% 0% no-repeat padding-box;
@@ -54,19 +50,24 @@
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-.overlay-content {
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: #FFFFFF;
-}
-
-.overlay-content a {
-    color: #FFFFFF;
+.overlay a {
+    color: white;
     text-decoration: none;
+    font-size: small;
     opacity: 1;
 }
-  
+
+.overlay-info {
+    margin-left: 70%;
+}
+
+.overlay-content {
+    color: white;
+    text-align: start;
+    opacity: 1;
+}
+
+
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 
 /* @media screen and (max-height: 450px) {
@@ -112,51 +113,3 @@
     object-fit: cover;
     opacity: 0.9;
 }
-
-/* Para blend color junto con el video */
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: silver;
-    mix-blend-mode: overlay;
-} */
-
-h6 a {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-h6 a:hover {
-    color: skyblue;
-}
-
-.menu {
-    top: 100px;
-    left: 60px;
-    width: 200px;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    list-style: none;
-}
-
-.menu li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: whitesmoke;
-}
-
-.menu li a:hover {
-    color: skyblue;
-}
-
-/* .scroll-page {
-    scroll-behavior: smooth;
-} */
-
-/* .scroll-page p {
-    text-align: left;
-} */
