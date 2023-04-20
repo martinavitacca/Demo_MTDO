@@ -29,7 +29,7 @@
 .menu-image {
     width: 32px;
     height: 14px;
-    background: transparent url('img/menu.png') 0% 0% no-repeat padding-box;
+    /* background: transparent url('img/menu.png') 0% 0% no-repeat padding-box; */
     opacity: 1;    
     cursor: pointer;
 }
@@ -67,17 +67,13 @@
     opacity: 1;
 }
 
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-
-/* @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-} */
+.closebtn {
+    width: 20px;
+    height: 20px;
+    visibility: hidden;
+    opacity: 1;
+    cursor: pointer;
+}
 
 /* #btn-back-to-top {
     width: 30px;

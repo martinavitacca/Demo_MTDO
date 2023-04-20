@@ -1,4 +1,20 @@
 
+// Funciones para el overlay
+function openNav() {
+    document.getElementById("menu").style.width = "100%";
+    document.getElementById("openMenu").hidden = true;
+    document.getElementById("closeMenu").style.visibility = "visible";
+}
+  
+function closeNav() {
+    document.getElementById("menu").style.width = "0%";
+    document.getElementById("openMenu").hidden = false;
+    document.getElementById("closeMenu").style.visibility = "hidden";
+}
+// 
+
+
+
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
 
@@ -28,10 +44,3 @@ document.documentElement.scrollTop = 0;
 
 
 
-function openNav() {
-    document.getElementById("menu").style.width = "100%";
-}
-  
-function closeNav() {
-    document.getElementById("menu").style.width = "0%";
-}
