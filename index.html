@@ -18,10 +18,7 @@
             <div class="logo ms-4 mt-5"></div>
 
             <!-- Detonante del overlay -->
-            <div class="align-items-end me-4 mt-1">
-                <img src="img/menu.png" class="menu-image" id="openMenu" onclick="openNav()">
-                <img src="img/close.png" class="closebtn" id="closeMenu" onclick="closeNav()">
-            </div>
+            <div class="menu-image me-5 mt-1" id="openMenu" onclick="openNav()"></div>
         </header>
 
         <!-- Video -->
@@ -32,14 +29,16 @@
     </div>
 
     <!-- Comienza overlay -->
-    <div id="menu" class="overlay">            
+    <div id="menu" class="overlay">        
 
         <div class="overlay-info mt-5">
         
             <a class="col-xl-4" href="#">info@gmail.com</a>
-            <a class="col-xl-4 ms-5" href="#">English</a>           
-        
-        </div>           
+            <a class="col-xl-4 ms-5" href="#">English</a>
+            <div class="closebtn" id="closeMenu" onclick="closeNav()"></div>          
+            
+
+        </div> 
 
         <!-- Overlay content -->
         <div class="row justify-content-end mx-5 my-5">
