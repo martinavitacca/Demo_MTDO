@@ -48,7 +48,6 @@
     backdrop-filter: blur(45px);
     opacity: 0.8;
     overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 .overlay a {
@@ -56,10 +55,6 @@
     text-decoration: none;
     font-size: small;
     opacity: 1;
-}
-
-.overlay-info {
-    margin-left: 70%;
 }
 
 .overlay-content {
