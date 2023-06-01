@@ -9,20 +9,10 @@
     overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-
-/* Changes appearence of a scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
+/* Hides scrollbar */
+::-webkit-scrollbar{
+    display: none;
 }
-
-::-webkit-scrollbar-track {
-    background: lightslategray;
-}
-
-::-webkit-scrollbar-thumb {
-    background: whitesmoke; 
-}
-/* End of the custom scrollbar */
 
 
 .logo {
@@ -63,9 +53,9 @@
 }
 
 .overlay-content {
+    text-align: justify;
     padding-right: 25px;
     color: white;
-    text-align: start;
     opacity: 1;
 }
 
@@ -75,7 +65,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 .closebtn {
@@ -124,13 +114,63 @@
     opacity: 0.9;
 }
 
+
+#container {
+    display: flex;                    /* establish flex container */
+}
+  
+#mail {
+    flex: 0 0 150px;                  /* don't grow, don't shrink, fixed at 150px width */
+    background-color: red;
+    text-align: end;
+}
+
+#english {
+    flex: 0 0 150px;                          
+    background-color: aqua;
+    text-align: center;
+}
+
+#closeMenu {
+    background-color: yellow;
+}
+
+
+
+
+
 @media screen and (max-width: 600px){
 
     .overlay-content{
-        padding-left: 0px;
+        padding-left: 20px;
         padding-right: 0px;
         color: red;
+        text-align: start;
     }
+
+    .scroll {
+        width: 80%;
+        height: 75%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-left: 2%;
+
+        
+    }
+
+    #container { 
+        flex-wrap: wrap; /* allow flex items to wrap */
+    }        
+    
+    #english { 
+        flex-basis: calc(100% - 200px); /* take full width less width of #a */
+    } 
+
+    #mail { 
+        flex-basis: calc(100% - 200px);
+    }
+   
+
 
     
 }
