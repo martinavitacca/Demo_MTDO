@@ -14,7 +14,6 @@
     display: none;
 }
 
-
 .logo {
     width: 155px;
     height: 64px;
@@ -53,7 +52,7 @@
 }
 
 .overlay-content {
-    text-align: justify;
+    text-align: left;
     padding-right: 25px;
     color: white;
     opacity: 1;
@@ -78,19 +77,14 @@
     margin-right: 66px;
 }
 
-/* #btn-back-to-top {
-    width: 30px;
-    height: 30px;
-    background-image: url(img/up-arrow.png);
-    background-size: 40px;
-    background-position: center;
-    background-repeat: no-repeat;
-    bottom: 20px;
-    right: 30px;
-    position: fixed;
-    opacity: 0.9; 
-    cursor: pointer;    
-} */
+.buttonUp {
+    width: 50px;
+    height: 50px;
+    background: transparent url('img/icons8-up-arrow-50.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    cursor: pointer;
+    margin-left: 50%;
+} 
 
 
 .showcase header {
@@ -114,37 +108,30 @@
     opacity: 0.9;
 }
 
-
-#container {
-    display: flex;                    /* establish flex container */
-}
-  
 #mail {
     flex: 0 0 150px;                  /* don't grow, don't shrink, fixed at 150px width */
-    background-color: red;
     text-align: end;
 }
 
 #english {
     flex: 0 0 150px;                          
-    background-color: aqua;
     text-align: center;
 }
 
-#closeMenu {
-    background-color: yellow;
+#mailMobile {
+    display: none;
+}
+
+#englishMobile {
+    display: none;
 }
 
 
-
-
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 430px){
 
     .overlay-content{
         padding-left: 20px;
         padding-right: 0px;
-        color: red;
         text-align: start;
     }
 
@@ -153,24 +140,30 @@
         height: 75%;
         overflow-x: hidden;
         overflow-y: auto;
-        margin-left: 2%;
-
-        
+        margin-left: 2%;      
     }
 
-    #container { 
-        flex-wrap: wrap; /* allow flex items to wrap */
-    }        
-    
-    #english { 
-        flex-basis: calc(100% - 200px); /* take full width less width of #a */
-    } 
-
-    #mail { 
-        flex-basis: calc(100% - 200px);
+    #mail {
+        display: none;
     }
-   
-
-
     
+    #english {
+        display: none;
+    }
+
+    .menuMobile {
+        justify-content: space-around;
+        text-align: start;
+        padding-right: 35%;
+    }
+
+    #mailMobile {
+        display: contents;
+        margin-top: 30px;        
+    }
+    
+    #englishMobile {
+        display: contents;
+        margin-top: 30px;
+    }
 }
