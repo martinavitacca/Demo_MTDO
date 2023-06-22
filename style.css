@@ -4,7 +4,7 @@
     font-family: 'Outfit', sans-serif;
 }
 
-/* Hides scrollbar */
+/* Hides scrollbar in Chrome, Edge */
 ::-webkit-scrollbar{
     display: none;
 }
@@ -87,6 +87,7 @@
     overflow-y: auto;
     text-align: center;
     margin-left: 15%;
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
 }
 
 .closebtn {
@@ -141,7 +142,7 @@
 
     .scroll {
         width: 80%;
-        height: 75%;
+        height: 70%;
         overflow-x: hidden;
         overflow-y: auto;
         margin-left: 2%;      
